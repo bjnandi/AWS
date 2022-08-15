@@ -1,6 +1,6 @@
 1) Create Database on RDS
 
-2) Download Source Code
+2) Download laravel Source Code
 
 3) Add Database Configuration on laravel .env file
 
@@ -72,65 +72,5 @@ For nginx laravel route not work on Elastic Beanstalk
 	}
 
 4) Reload nginx:
-
-	sudo nginx -s reload
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-For nginx laravel route not work on Elastic Beanstalk
---------------------------------------------------------
-
-1) login instance:
-
-
-2) open file 
-
-	nano /etc/nginx/conf.d/elasticbeanstalk/php.conf
-
-3) insert code:
-
-	location / {
-		try_files $uri $uri/ /index.php?$query_string;
-		gzip_static on;
-	}
-
-4) Reload nginx
 
 	sudo nginx -s reload
