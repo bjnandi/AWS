@@ -1,0 +1,16 @@
+{
+  "source": ["com.aws.orders"],
+  "detail": {
+    "category": ["office-supplies"],
+    "value": [{
+      "numeric": [">", 1000]
+    }],
+    "location": [{
+      "prefix": "eu-west"
+    }]
+  }
+}
+
+
+
+Reference  : https://aws.amazon.com/blogs/compute/message-filtering-operators-for-numeric-matching-prefix-matching-and-blacklisting-in-amazon-sns/
