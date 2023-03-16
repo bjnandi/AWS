@@ -1,0 +1,13 @@
+py chode
+_______
+
+import boto3
+import json
+sns_arn = "   "
+
+def lambda_handler(event, context):
+    client = boto3.client("sns")
+    resp = client.publish(TargetArn=sns_arn, Message=json.dumps(event), Subject="S3 object alert")
+    
+    
+ https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-s3-object-created-tutorial.html
